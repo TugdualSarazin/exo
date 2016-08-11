@@ -1,7 +1,7 @@
 
 enablePlugins(DockerPlugin)
 
-name := "hello-akka"
+name := "exo1"
 
 version := "1.0"
 
