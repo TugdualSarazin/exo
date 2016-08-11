@@ -1,3 +1,5 @@
+package exo
+
 import org.joda.time.{DateTime, Duration}
 
 import scala.collection.mutable.ListBuffer

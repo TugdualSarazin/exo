@@ -1,11 +1,9 @@
+package exo
 
-import java.io.{BufferedReader, File, FileReader}
-import java.nio.file.{Files, Paths}
-import java.util
 
-import akka.actor.{Actor, ActorRef, ActorSystem, PoisonPill, Props}
+import akka.actor.{Actor, ActorSystem, Props}
 import org.joda.time.DateTime
-import org.joda.time.format.{DateTimeFormat, DateTimeFormatter}
+import org.joda.time.format.DateTimeFormat
 
 import scala.collection.mutable.ListBuffer
 

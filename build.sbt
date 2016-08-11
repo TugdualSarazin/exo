@@ -1,6 +1,3 @@
-
-enablePlugins(DockerPlugin)
-
 name := "exo1"
 
 version := "1.0"
@@ -22,8 +19,12 @@ testOptions += Tests.Argument(TestFrameworks.JUnit, "-v")
 
 // Docker config
 
+enablePlugins(JavaAppPackaging)
+
+mainClass in Compile := Some("exo.Exo1")
+
 maintainer in Docker := "Tugdual Sarazin <tugdual.sarazin@gmail.com>"
 
-dockerBaseImage := "java:8"
+dockerBaseImage := "dockerfile/java"
 
 dockerExposedVolumes := Seq("/opt/docker/logs")
